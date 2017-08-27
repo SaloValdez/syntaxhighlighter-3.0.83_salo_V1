@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>SyntaxHighlighter Autoloader Demo</title>
+	<script type="text/javascript" src="salomon/scripts/XRegExp.js"></script>
+	<script type="text/javascript" src="salomon/scripts/shCore.js"></script>
+	<script type="text/javascript" src="salomon/scripts/shAutoloader.js"></script>
+	<link type="text/css" rel="stylesheet" href="salomon/styles/shCore.css"/>
+	<link type="text/css" rel="Stylesheet" href="salomon/styles/shThemeDefault.css" />
+</head>
+<body>
+<h2>SyntaxHighlighter Autoloader Demo SALOMON</h2>
+
+<p>
+	The highlighters below have their brushes loaded dynamically as evident by looking at
+	the <code>&lt;head /></code> of this HTML file.
+</p>
+
+<script type="syntaxhighlighter" class="brush: css"><![CDATA[css]]></script>
+<script type="syntaxhighlighter" class="brush: js"><![CDATA[js]]></script>
+<script type="syntaxhighlighter" class="brush: text"><![CDATA[text]]></script>
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[xml]]>
+
+ dasdasdsad<html>
+	<p>mentoring</p>
+ </html>  </script>
+
+
+
+
+ <script type="syntaxhighlighter" class="brush: xml"><![CDATA[xml]]>
+
+  dasdasdsad<html>
+ 	<p>mentoring</p>
+  </html>  </script>
+
+<script type="text/javascript">
+
+SyntaxHighlighter.autoloader(
+
+	'css					salomon/scripts/shBrushCss.js',
+	'js jscript javascript	salomon/scripts/shBrushJScript.js',
+	'text plain				salomon/scripts/shBrushPlain.js',
+	'xml xhtml xslt html	salomon/scripts/shBrushXml.js'
+);
+
+
+SyntaxHighlighter.all();
+</script>
+
+</body>
+</html>
